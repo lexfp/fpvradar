@@ -12,6 +12,8 @@ I waited and waited for him to release his code, but alas he forgot and I ended 
 4) SDR Dongle (e.g. flightaware, rtl-sdr) I am using the flighaware pro stick plus
 5) micro usb to USB adapter or HUB (if using pi zero since it doesn't have full size usb ports) I used the Zero4U 4 Port USB Hub
 6) 5v voltage regulator for external battery power (optional)
+7) Antenna - mine is homemade, but you can purchase a 1090 one easily
+8) Case - I used the top cover for the one here: https://www.thingiverse.com/thing:1886598 I snipped away ap portion of it to glue in the gps.
 
 # Installation
 
@@ -76,3 +78,25 @@ Most of the issues I've experienced are from the GPS not getting signal while te
 12) Future  
 I have initially thought of a screen, but decided against it since I will never really look at it while flying FPV and wanted it to consume minimal power.
 However, I will probably be adding a second dongle to monitor 978 as well.
+
+## FAQ: 
+How good is the range?  
+Depends on your antenna. I use the pro stick which has an internal filter. Coupled with my home made antenna, I can often see aircraft in other states over 100 miles away. This is with the antenna sitting on my desk inside my house. Since you'll be using this outside, I can't imagine that you would have any issues unless you used a really poor antenna.
+
+Can I use other Pis?  
+Yes, you should be able to use almost any. My initial prototype (these pics are my 2nd prototype) was a Pi 3 model B from 2016. Unfortunately, I burned that one up by wiring up a voltage regulator to it without checking the inputs/outputs. Since I knew the concept worked, I wanted to build the second one to be as small/compact as possible.  
+
+Do you sell these?  
+No. My time is worth a lot to me, so go build your own.  
+
+Why do you have switches on yours?  
+The white switch is the momentary on/off switch to turn the pi on and off out in the field. Unplugging is a bad idea as you can corrupt your file system in which case you have to reformat the card and start from scratch. The black switch is if I am at home and I don't want to use the GPS/buzzer and I just want to monitor aircraft around me instead.  
+
+What is the approximate cost?
+For the setup I have, the cost of the components are around $50. This doesn't include the antenna which I made myself.  
+
+Is there a way to make it look better?  
+I am not good at 3d design, so I will not be spending my time making a special case for it. You are welcome to use anything you find on thingiverse.
+
+How much testing has gone into this?
+Almost none (except for my own). Seriously, I haven't tested a lot of the conditions in there since they are useless to me, so some things may not work. Please test everything yourself and let me know if you find any bugs. 
