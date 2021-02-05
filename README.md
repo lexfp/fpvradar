@@ -96,11 +96,11 @@ No. My time is worth a lot to me, so go build your own.
 Why do you have switches on yours?  
 The white switch is the momentary on/off switch to turn the pi on and off out in the field. Unplugging is a bad idea as you can corrupt your file system in which case you have to reformat the card and start from scratch. The black switch is if I am at home and I don't want to use the GPS/buzzer and I just want to monitor aircraft around me instead.  
 
-What is the approximate cost?
+What is the approximate cost?  
 For the setup I have, the cost of the components are around $50. This doesn't include the antenna which I made myself.  
 
 Is there a way to make it look better?  
 I am not good at 3d design, so I will not be spending my time making a special case for it. You are welcome to use anything you find on thingiverse.
 
-How much testing has gone into this?
+How much testing has gone into this?  
 Almost none (except for my own). Seriously, I haven't tested a lot of the conditions in there since they are useless to me, so some things may not work. Please test everything yourself and let me know if you find any bugs. 
