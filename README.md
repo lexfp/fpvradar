@@ -50,22 +50,11 @@ After rebooting, you can test if everything works with either "sudo gpsmon" or "
 7) Clone this repo into the home directory. Make sure the path /home/pi/fpvradar/fpvradar.py is correct.
 
 8) Turn fpvradar into a service which automatically starts:
-/lib/systemd/system/fpvradar.service
-[Unit]
-Description=FPV Radar Service
-After=multi-user.target
+/lib/systemd/system/fpvradar.service (move included fpvradar.service file to /lib/systemd/system)    
+sudo systemctl daemon-reload  
+sudo systemctl enable fpvradar.service    
 
-[Service]
-Type=idle
-ExecStart=/usr/bin/python /home/pi/fpvradar/fpvradar.py
-
-[Install]
-WantedBy=multi-user.target
-
-sudo systemctl daemon-reload
-sudo systemctl enable fpvradar.service
-
-9) Persistent LOGS (Optional)
+9) Persistent LOGS (Optional)  
 set your time zone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones):  
 sudo timedatectl set-timezone America/New_York  
 sudo mkdir -p /var/log/journal
