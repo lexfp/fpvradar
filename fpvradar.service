@@ -1,0 +1,10 @@
+[Unit]  
+Description=FPV Radar Service  
+After=multi-user.target  
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pi/fpvradar/fpvradar.py
+
+[Install]
+WantedBy=multi-user.target
