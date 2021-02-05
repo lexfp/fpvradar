@@ -76,3 +76,16 @@ Most of the issues I've experienced are from the GPS not getting signal while te
 12) Future  
 I have initially thought of a screen, but decided against it since I will never really look at it while flying FPV and wanted it to consume minimal power.
 However, I will probably be adding a second dongle to monitor 978 as well.
+
+## FAQ: 
+How good is the range?  
+Depends on your antenna. I use the pro stick which has an internal filter. Coupled with my home made antenna, I can often see aircraft in other states over 100 miles away. This is with the antenna sitting on my desk inside my house. Since you'll be using this outside, I can't imagine that you would have any issues unless you used a really poor antenna.
+
+Can I use other Pis?  
+Yes, you should be able to use almost any. My initial prototype (these pics are my 2nd prototype) was a Pi 3 model B from 2016. Unfortunately, I burned that one up by wiring up a voltage regulator to it without checking the inputs/outputs. Since I knew the concept worked, I wanted to build the second one to be as small/compact as possible.  
+
+Do you sell these?  
+No. My time is worth a lot to me, so go build your own.  
+
+Why do you have switches on yours?  
+The white switch is the momentary on/off switch to turn the pi on and off out in the field. Unplugging is a bad idea as you can corrupt your file system in which case you have to reformat the card and start from scratch. The black switch is if I am at home and I don't want to use the GPS/buzzer and I just want to monitor aircraft around me instead.  
