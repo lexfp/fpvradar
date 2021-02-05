@@ -1,6 +1,8 @@
 # FPV Radar
 
-Monitors the nearby airspace for low flying aircraft.
+Monitors the nearby airspace for low flying aircraft.  
+I was initially inspired by and made aware of ADSB by xjet (good old Bruce). https://www.youtube.com/watch?v=ggaDvxNtJ2Q  
+I waited and waited for him to release his code, but alas he forgot and I ended up implementing my own solution. 
 
 # Required components:
 
