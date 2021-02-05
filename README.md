@@ -68,5 +68,9 @@ sudo journalctl -b -1 -u fpvradar.service (previous boot logs)
 10) Power  
 You can power your pi from the regular USB port or an external battery. If using an external battery, you'll need to use a 5v regulator. 
 
-10) Troubleshooting  
+11) Troubleshooting  
 Most of the issues I've experienced are from the GPS not getting signal while testing indoors. You will also need to double check your wiring to make sure everything is hooked up correctly. Try writing code to test each component separately (buzzer, gps).
+
+12) Future  
+I have initially thought of a screen, but decided against it since I will never really look at it while flying FPV and wanted it to consume minimal power.
+However, I will probably be adding a second dongle to monitor 978 as well.
