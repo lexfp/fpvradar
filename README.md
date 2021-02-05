@@ -72,14 +72,18 @@ sudo journalctl -b -1 -u fpvradar.service (previous boot logs)
 10) Power  
 You can power your pi from the regular USB port or an external battery. If using an external battery, you'll need to use a 5v regulator. 
 
-11) Troubleshooting  
+11) Screen (optional)  
+The reason I did not add a screen to this like Bruce did was for a multitude of reasons. Since I fly fpv, I would not be looking at the screen most of the time and it would only consume extra power. I also wanted it to be as compact and inexpensive as possible. Should you want to add a screen, however, there is an easy solution. If you carry a cell phone, simply create a hotspot with the same wifi name/password as you used at your home router. While you're out in the field, it will not find your home router, but will connect to your phone instead. Once it connects to your phone, you will need to find the IP address of the Pi. If your phone doesn't let you see it by default, you'll need to install an hotspot manager app such as https://play.google.com/store/apps/details?id=com.catchy.tools.mobilehotspot.dp&hl=en_US&gl=US which will show it to you. Once you find the ip, simply enter it in your browser on the phone and it will show you a map with surrounding planes (default piaware screen). 
+
+## Troubleshooting  
 Most of the issues I've experienced are from the GPS not getting signal while testing indoors. You will also need to double check your wiring to make sure everything is hooked up correctly. Try writing code to test each component separately (buzzer, gps).
 
-12) Future  
-I have initially thought of a screen, but decided against it since I will never really look at it while flying FPV and wanted it to consume minimal power.
-However, I will probably be adding a second dongle to monitor 978 as well.
+## Future  
+Adding a second dongle to monitor 978 as well.  
+If someone wants to design a better 3d printed case for this, I would be happy to link to it.
 
 ## FAQ: 
+
 How good is the range?  
 Depends on your antenna. I use the pro stick which has an internal filter. Coupled with my home made antenna, I can often see aircraft in other states over 100 miles away. This is with the antenna sitting on my desk inside my house. Since you'll be using this outside, I can't imagine that you would have any issues unless you used a really poor antenna.
 
