@@ -6,13 +6,13 @@ I waited and waited for him to release his code, but alas he forgot and I ended 
 
 # Required components:
 
-1) Raspberry pi (zero w used in this guide)
-2) GPS module (e.g. Beitian 220)
-3) Buzzer
-4) SDR Dongle (e.g. flightaware, rtl-sdr) I am using the flighaware pro stick plus
+1) Raspberry pi (zero w used in this guide) https://www.banggood.com/custlink/mvDhZjVbBW (don't buy it at banggood unless you have to since it's expensive there)
+2) GPS module (e.g. Beitian 220) https://www.banggood.com/custlink/mGmRZjPN0m
+3) Buzzer https://www.banggood.com/custlink/GGKdSoHb0F
+4) SDR Dongle (e.g. flightaware, rtl-sdr) I am using the flighaware pro stick plus https://flightaware.com/adsb/prostick/
 5) micro usb to USB adapter or HUB (if using pi zero since it doesn't have full size usb ports) I used the Zero4U 4 Port USB Hub
-6) 5v voltage regulator for external battery power (optional)
-7) Antenna - mine is homemade, but you can purchase a 1090 one easily
+6) 5v voltage regulator for external battery power (optional) - I recommend 2-3A
+7) Antenna - mine is homemade, but you can purchase a 1090 one easily https://www.amazon.com/NooElec-ADS-B-Discovery-Antenna-Bundle/dp/B01J9DH9U2/ref=sr_1_6?dchild=1&keywords=1090+antenna&qid=1612488541&sr=8-6
 8) Case - I used the top cover for the one here: https://www.thingiverse.com/thing:1886598 I snipped away ap portion of it to glue in the gps.
 
 # Installation
