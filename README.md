@@ -83,7 +83,7 @@ Most of the issues I've experienced are from the GPS not getting signal while te
 
 ## Future  
 Adding a second dongle to monitor 978 as well.  
-Instead of using gps data from the PI, feed telemetry position data from the plane back into the PI. Maybe bluetooth?
+Instead of using gps data from the PI, feed telemetry position data from the plane back into the PI. Maybe bluetooth?  
 If someone wants to design a better 3d printed case for this, I would be happy to link to it.  
 
 ## FAQ: 
