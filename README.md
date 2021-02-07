@@ -60,6 +60,9 @@ After rebooting, you can test if everything works with either "sudo gpsmon" or "
 /lib/systemd/system/fpvradar.service (move included fpvradar.service file to /lib/systemd/system)    
 sudo systemctl daemon-reload  
 sudo systemctl enable fpvradar.service    
+If you need to check if it is running after you reboot, you can use the status command:  
+sudo systemctl status fpvradar.service  
+If things appear running but they still don't work, then move on to the next steps and check the logs.  
 
 9) Persistent LOGS (Optional)  
 set your time zone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones):  
