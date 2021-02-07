@@ -54,7 +54,11 @@ GPSD_SOCKET="/var/run/gpsd.sock"
 After rebooting, you can test if everything works with either "sudo gpsmon" or "sudo cgps -s"  
 
 
-7) Clone this repo into the home directory. Make sure the path /home/pi/fpvradar/fpvradar.py is correct. At this time you should probably go into the code using your favorite editor and change the values for the different perimeter alarms along with the altitude at which you want to monitor. If you want to play with the other options/settings, be sure to test them as I haven't done much testing other than the defaults.
+7) Clone this repo into the home directory.   
+Make sure you're in the home directory /home/pi and type "git clone https://github.com/lexfp/fpvradar.git"  
+After the command runs, you should have a fpvradar directory with all the files inside.
+Make sure the file /home/pi/fpvradar/fpvradar.py exists.   You can type "ls /home/pi/fpvradar/fpvradar.py"  
+At this time you should probably go into the code using your favorite editor and change the values for the different perimeter alarms along with the altitude at which you want to monitor. If you want to play with the other options/settings, be sure to test them as I haven't done much testing other than the defaults.
 
 8) Turn fpvradar into a service which automatically starts:
 /lib/systemd/system/fpvradar.service (move included fpvradar.service file to /lib/systemd/system)    
