@@ -58,7 +58,7 @@ After rebooting, you can test if everything works with either "sudo gpsmon" or "
 Make sure you're in the home directory /home/pi and type "git clone https://github.com/lexfp/fpvradar.git"  
 After the command runs, you should have a fpvradar directory with all the files inside.
 Make sure the file /home/pi/fpvradar/fpvradar.py exists.   You can type "ls /home/pi/fpvradar/fpvradar.py"  
-At this time you should probably go into the code using your favorite editor and change the values for the different perimeter alarms along with the altitude at which you want to monitor. If you want to play with the other options/settings, be sure to test them as I haven't done much testing other than the defaults.
+At this time you should probably go into the code using your favorite editor (type "nano /home/pi/fpvradar/fpvradar.py") and change the values for the different perimeter alarms along with the altitude at which you want to monitor (INNER_PERIMETER_ALARM_MILES, ALTITUDE_ALARM_FEET, etc...). If you want to play with the other options/settings, be sure to test them as I haven't done much testing other than the defaults. Once you finish editing, you can hit ctrl-x to exit and it will ask you if you want to save first. Just answer yes.
 
 8) Turn fpvradar into a service which automatically starts:
 /lib/systemd/system/fpvradar.service (move included fpvradar.service file to /lib/systemd/system)    
