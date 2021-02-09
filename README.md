@@ -1,6 +1,7 @@
 # FPV Radar
 
 https://youtu.be/YkmsAgEEuzo
+https://youtu.be/ppq6NCjMSJI (video of another user's build in action. Thanks Colby!)
 
 Monitors the nearby airspace for low flying aircraft.  
 I was initially inspired by and made aware of ADSB by xjet (good old Bruce). https://www.youtube.com/watch?v=ggaDvxNtJ2Q  
@@ -110,8 +111,8 @@ The white switch is the momentary on/off switch to turn the pi on and off out in
 What is the approximate cost?  
 For the setup I have, the cost of the components are around $50. This doesn't include the antenna which I made myself.  
 
-Is there a way to make it look better?  
-I am not good at 3d design, so I will not be spending my time making a special case for it. You are welcome to use anything you find on thingiverse.
-
 How much testing has gone into this?  
 Almost none (except for my own). Seriously, I haven't tested a lot of the conditions in there since they are useless to me, so some things may not work. Please test everything yourself and let me know if you find any bugs. 
+
+Are there alternate cases?  
+Here's a design by Colby Terry: https://www.thingiverse.com/thing:4756697?fbclid=IwAR1rNRHUoMtD9yErSb5yf0OHlEy4OJyrLd6rC7ygGXJgEToh9D8qGnDaD9E 
