@@ -7,6 +7,9 @@ from time import sleep
 from gpiozero import Buzzer
 from datetime import datetime
 
+#This code is released under the terms of the unlicense: https://unlicense.org/
+#Author github.com/lexfp
+
 # Disclaimer: This code is not pretty. It is written like a script since that is what it is. 
 DUMP1090_URL = 'http://127.0.0.1/dump1090-fa/data/aircraft.json'
 UNKNOWN = 'Unknown'
