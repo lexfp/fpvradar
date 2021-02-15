@@ -8,6 +8,9 @@ I was initially inspired by and made aware of ADSB by xjet (good old Bruce). htt
 I waited and waited for him to release his code, but alas he forgot and I ended up implementing my own solution. 
 To clarify, this is a standalone device and does not require wifi/and or data plan to work. Check your country for ADSB requirements. 
 
+# License
+The code herein written by the Author is released under the terms of the unlicense. https://unlicense.org/
+
 # Required components:
 
 1) Raspberry pi (zero w used in this guide) https://www.banggood.com/custlink/mvDhZjVbBW (don't buy it at banggood unless you have to since it's expensive there)
