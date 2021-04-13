@@ -37,14 +37,16 @@ dtoverlay=gpio-shutdown,gpio_pin=3
 see https://www.stderr.nl/Blog/Hardware/RaspberryPi/PowerButton.html  
 You will also need to wire a momentary switch/button between GPIO3(pin 5) & Ground. Pressing it once will shutdown the system (wait until all the lights die before unplugging) and pressing it again will start up the system.
 
-5) Install the following libraries:  
+5) Buzzer (optional) - wire positive to GPIO17 and black to any ground. 
+
+6) Install the following libraries:  
 sudo apt-get update  
 sudo apt-get install python-requests  
 sudo apt install python-gpiozero  
 sudo apt install python-geopy  
 sudo apt install git  
 
-6) Set up GPS:
+7) Set up GPS:
 For reference, you can use the following site (but follow my instructions instead since they differ a bit):    
 https://maker.pro/raspberry-pi/tutorial/how-to-use-a-gps-receiver-with-raspberry-pi-4  
 You can use various GPS modules, but I have chosen to use the Beitian 220. For wiring, you can use any of the 5v and grounds. I chose pins 4 & 6. The GPS rx will go to the tx on the pi and vice versa. In the case of the beitian 220, the green wire will go to pin 8 (GPIO14) and the white wire will go to pin 10 (GPIO15).  
@@ -59,13 +61,13 @@ GPSD_SOCKET="/var/run/gpsd.sock"
 After rebooting, you can test if everything works with either "sudo gpsmon" or "sudo cgps -s"  
 
 
-7) Clone this repo into the home directory.   
+8) Clone this repo into the home directory.   
 Make sure you're in the home directory /home/pi and type "git clone https://github.com/lexfp/fpvradar.git"  
 After the command runs, you should have a fpvradar directory with all the files inside.
 Make sure the file /home/pi/fpvradar/fpvradar.py exists.   You can type "ls /home/pi/fpvradar/fpvradar.py"  
 At this time you should probably go into the code using your favorite editor (type "nano /home/pi/fpvradar/fpvradar.py") and change the values for the different perimeter alarms along with the altitude at which you want to monitor (INNER_PERIMETER_ALARM_MILES, ALTITUDE_ALARM_FEET, etc...). If you want to play with the other options/settings, be sure to test them as I haven't done much testing other than the defaults. Once you finish editing, you can hit ctrl-x to exit and it will ask you if you want to save first. Just answer yes.
 
-8) Turn fpvradar into a service which automatically starts:
+9) Turn fpvradar into a service which automatically starts:
 /lib/systemd/system/fpvradar.service (move included fpvradar.service file to /lib/systemd/system)    
 sudo systemctl daemon-reload  
 sudo systemctl enable fpvradar.service    
@@ -73,7 +75,7 @@ If you need to check if it is running after you reboot, you can use the status c
 sudo systemctl status fpvradar.service  
 If things appear running but they still don't work, then move on to the next steps and check the logs.  
 
-9) Persistent LOGS (Optional)  
+10) Persistent LOGS (Optional)  
 set your time zone (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones):  
 sudo timedatectl set-timezone America/New_York  
 sudo mkdir -p /var/log/journal
@@ -84,10 +86,10 @@ To see the logs you can use the following commands (you can also use -2,-3 to go
 sudo journalctl -b 0 -u fpvradar.service (current boot logs)  
 sudo journalctl -b -1 -u fpvradar.service (previous boot logs) 
 
-10) Power  
+11) Power  
 You can power your pi from the regular USB port or an external battery. If using an external battery, you'll need to use a 5v regulator. There are a few ways to wire up the PI to be powered from a battery, but I went with hooking up a 5v regulator to the 5v rails. You can google the different options.
 
-11) Screen (optional)  
+12) Screen (optional)  
 The reason I did not add a screen to this like Bruce did was for a multitude of reasons. Since I fly fpv, I would not be looking at the screen most of the time and it would only consume extra power. I also wanted it to be as compact and inexpensive as possible. Should you want to add a screen, however, there is an easy solution. If you carry a cell phone, simply create a hotspot with the same wifi name/password as you used at your home router. While you're out in the field, it will not find your home router, but will connect to your phone instead. Once it connects to your phone, you will need to find the IP address of the Pi. If your phone doesn't let you see it by default, you'll need to install an hotspot manager app such as https://play.google.com/store/apps/details?id=com.catchy.tools.mobilehotspot.dp&hl=en_US&gl=US which will show it to you. Once you find the ip, simply enter it in your browser on the phone and it will show you a map with surrounding planes (default piaware screen). 
 
 ## Troubleshooting  
