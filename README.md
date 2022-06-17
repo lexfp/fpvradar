@@ -39,7 +39,7 @@ You will also need to wire a momentary switch/button between GPIO3(pin 5) & Grou
 
 5) Buzzer (optional) - wire positive to GPIO17 and black to any ground. 
 
-6) Install the following libraries:  
+6) Install the following libraries (script was tested against python 2.7.16):  
 sudo apt-get update  
 sudo apt-get install python-requests  
 sudo apt install python-gpiozero  
